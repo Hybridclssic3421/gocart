@@ -1,0 +1,28 @@
+2024-06-17T14:55:00+00:00 INFO Called process_payment with params order_id 2804
+2024-06-17T14:55:00+00:00 INFO Set transient with key razorpay_wc_order_id params order_id 2804
+2024-06-17T14:55:03+00:00 ERROR Could not enable webhook for localhost
+2024-06-17T14:55:03+00:00 INFO getRazorpayPaymentParams 2804
+2024-06-17T14:55:03+00:00 INFO createOrGetRazorpayOrderId 2804 and is1ccCheckout is set to no
+2024-06-17T14:55:03+00:00 INFO Called createOrGetRazorpayOrderId with params orderId 2804 and is_magic_checkout_order is set to no
+2024-06-17T14:55:04+00:00 INFO razorpayOrderId  | sessionKey razorpay_order_id2804
+2024-06-17T14:55:04+00:00 INFO Called createRazorpayOrderId with params orderId 2804 and sessionKey razorpay_order_id2804
+2024-06-17T14:55:04+00:00 INFO Called getOrderCreationData with params orderId 2804
+2024-06-17T14:55:04+00:00 INFO Called getOrderCreationData with params orderId 2804 and is1ccOrder is set to no
+2024-06-17T14:55:04+00:00 INFO For order 2804
+2024-06-17T14:55:04+00:00 INFO {"receipt":"2804","amount":19900,"currency":"INR","payment_capture":1,"app_offer":0,"notes":{"woocommerce_order_number":"2804"}}
+2024-06-17T14:55:05+00:00 INFO For order session key razorpay_order_id2804
+2024-06-17T14:56:58+00:00 INFO Called check_razorpay_response: wc_order_DcdRnUCsymJVN
+2024-06-17T14:56:58+00:00 INFO HPOS is enabled and order status: pending
+2024-06-17T14:56:58+00:00 INFO Get order id in check_razorpay_response: orderId 2804
+2024-06-17T14:56:58+00:00 INFO verifySignature orderId: 2804
+2024-06-17T14:56:58+00:00 INFO verifySignature attr
+2024-06-17T14:56:58+00:00 INFO {"razorpay_payment_id":"pay_ONrwU44oAZl2IV","razorpay_signature":"79d62336d13543d5133f643f2837dddb1b82f5e9cd350c52a160b9fdf60a626d","razorpay_order_id":"order_ONrueJPt6FEtpK"}
+2024-06-17T14:56:58+00:00 INFO updateOrder orderId: 2804 , razorpayPaymentId: pay_ONrwU44oAZl2IV , success: 1
+2024-06-17T14:56:58+00:00 INFO Order details check initiated step 1 for the orderId: 2804
+2024-06-17T14:57:03+00:00 INFO Woocommerce orderId: 2804 processed through callback
+2024-06-17T14:57:59+00:00 INFO Trying to create one_cc_address_sync_cron
+2024-06-17T14:57:59+00:00 INFO Failed to create one_cc_address_sync_cron as invalid one cc merchant
+2024-06-17T14:57:59+00:00 INFO Attempting to delete one_cc_address_sync_cron, status: cancelled, message: invalid_1cc_merchant
+2024-06-17T14:57:59+00:00 INFO Deleted one_cc_address_sync_cron  if exists
+2024-06-17T14:57:59+00:00 INFO updateAddressSyncCronData: status=cancelled, message=invalid_1cc_merchant, cronStatus=deleted
+2024-06-17T14:57:59+00:00 INFO create one_cc_plugin_sync_cron successful

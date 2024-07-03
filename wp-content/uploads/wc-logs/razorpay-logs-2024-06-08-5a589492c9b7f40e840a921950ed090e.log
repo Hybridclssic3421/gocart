@@ -1,0 +1,30 @@
+2024-06-08T05:20:40+00:00 ERROR Could not enable webhook for localhost
+2024-06-08T05:20:40+00:00 INFO Trying to create one_cc_address_sync_cron
+2024-06-08T05:20:40+00:00 INFO Failed to create one_cc_address_sync_cron as invalid one cc merchant
+2024-06-08T05:20:40+00:00 INFO Attempting to delete one_cc_address_sync_cron, status: cancelled, message: invalid_1cc_merchant
+2024-06-08T05:20:40+00:00 INFO Deleted one_cc_address_sync_cron  if exists
+2024-06-08T05:20:40+00:00 INFO updateAddressSyncCronData: status=cancelled, message=invalid_1cc_merchant, cronStatus=deleted
+2024-06-08T05:20:40+00:00 INFO updateAddressSyncCronData:530 - Updating option: ONE_CC_ADDRESS_SYNC_CRON_HOOK
+2024-06-08T05:20:40+00:00 INFO updateAddressSyncCronData:532 -  Successfully Updated Option: ONE_CC_ADDRESS_SYNC_CRON_HOOK
+2024-06-08T05:20:40+00:00 INFO create one_cc_plugin_sync_cron successful
+2024-06-08T08:17:41+00:00 INFO Called process_payment with params order_id 597
+2024-06-08T08:17:41+00:00 INFO Set transient with key razorpay_wc_order_id params order_id 597
+2024-06-08T08:17:45+00:00 INFO getRazorpayPaymentParams 597
+2024-06-08T08:17:45+00:00 INFO createOrGetRazorpayOrderId 597 and is1ccCheckout is set to no
+2024-06-08T08:17:46+00:00 INFO Called createOrGetRazorpayOrderId with params orderId 597 and is_magic_checkout_order is set to no
+2024-06-08T08:17:46+00:00 INFO razorpayOrderId  | sessionKey razorpay_order_id597
+2024-06-08T08:17:46+00:00 INFO Called createRazorpayOrderId with params orderId 597 and sessionKey razorpay_order_id597
+2024-06-08T08:17:46+00:00 INFO Called getOrderCreationData with params orderId 597
+2024-06-08T08:17:46+00:00 INFO Called getOrderCreationData with params orderId 597 and is1ccOrder is set to no
+2024-06-08T08:17:46+00:00 INFO For order 597
+2024-06-08T08:17:46+00:00 INFO {"receipt":"597","amount":35000,"currency":"INR","payment_capture":1,"app_offer":0,"notes":{"woocommerce_order_number":"597"}}
+2024-06-08T08:17:47+00:00 INFO For order session key razorpay_order_id597
+2024-06-08T08:18:43+00:00 INFO Called check_razorpay_response: wc_order_335QLGxfUmHvm
+2024-06-08T08:18:43+00:00 INFO HPOS is enabled and order status: pending
+2024-06-08T08:18:43+00:00 INFO Get order id in check_razorpay_response: orderId 597
+2024-06-08T08:18:43+00:00 INFO verifySignature orderId: 597
+2024-06-08T08:18:43+00:00 INFO verifySignature attr
+2024-06-08T08:18:43+00:00 INFO {"razorpay_payment_id":"pay_OKCLIrLNfA8PGE","razorpay_signature":"78d296fdeef4c14155fa2323f6e60ae3c0243539895d2de0e125b46d75bcea97","razorpay_order_id":"order_OKCKQyKBLhU2hE"}
+2024-06-08T08:18:43+00:00 INFO updateOrder orderId: 597 , razorpayPaymentId: pay_OKCLIrLNfA8PGE , success: 1
+2024-06-08T08:18:43+00:00 INFO Order details check initiated step 1 for the orderId: 597
+2024-06-08T08:18:50+00:00 INFO Woocommerce orderId: 597 processed through callback

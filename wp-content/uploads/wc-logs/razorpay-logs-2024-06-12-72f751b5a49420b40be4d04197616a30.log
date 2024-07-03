@@ -1,0 +1,6 @@
+2024-06-12T14:13:17+00:00 INFO Trying to create one_cc_address_sync_cron
+2024-06-12T14:13:17+00:00 INFO Failed to create one_cc_address_sync_cron as invalid one cc merchant
+2024-06-12T14:13:17+00:00 INFO Attempting to delete one_cc_address_sync_cron, status: cancelled, message: invalid_1cc_merchant
+2024-06-12T14:13:17+00:00 INFO Deleted one_cc_address_sync_cron  if exists
+2024-06-12T14:13:17+00:00 INFO updateAddressSyncCronData: status=cancelled, message=invalid_1cc_merchant, cronStatus=deleted
+2024-06-12T14:13:17+00:00 INFO create one_cc_plugin_sync_cron successful
