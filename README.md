@@ -43,4 +43,4 @@ If you encounter any issues or have questions, please open an issue on this repo
 
 ## Contact
 
-You can contact me at stewart03421@gmail.com or Hybridclassic3421 on GitHub.
+You can contact me at stewart03421@gmail.com or Hybridclssic3421 on GitHub.
